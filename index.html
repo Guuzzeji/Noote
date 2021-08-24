@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base target="_blank">
+
+    <!-- * [ JS LIB ] All need to text editor to work -->
+    <script src="./lib/marked.min.js"></script>
+    <script src="./lib/purify.js"></script>
+    <script src="./lib/Sortable.js"></script>
+
+    <!-- * JS LIB -->
+    <script src="./lib/jquery-3.6.0.min.js"></script>
+    <script src="./lib/mousetrap.js"></script>
+
+    <!-- * CSS LIB & Main CSS -->
+    <link rel="stylesheet" href="./lib/water.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- * Manifest & Worker -->
+    <link rel="manifest" href="manifest.json">
+    <script src="./js/worker.js"></script>
+
+    <!-- * Icon and Title -->
+    <link rel="icon" href="./img/notes.png" type="image/png">
+    <title id="page-name">Nothing...</title>
+
+</head>
+
+<body>
+    <!-- ! Menu -->
+    <div>
+        <div class="btnbar">
+            <a onclick="loadbtn()" class="menubtn" target="_self" tabindex="-1">Open</a>
+            <a onclick="savebtn()" class="menubtn" target="_self" tabindex="-1">Save</a>
+            <a onclick="readview()" class="menubtn" target="_self" tabindex="-1">Read</a>
+            <a onclick="click_text_overlay()" class="menubtn" target="_self" tabindex="-1">Edit</a>
+        </div>
+
+        <br>
+
+        <!-- ! Text Helper -->
+        <div id="text-list" class="overlay">
+            <hr>
+
+            <!-- * Item List -->
+            <div class="text-list">
+                <ul class="ul-text-list">
+                    <li>
+                        <a onclick="text_list_helper('# H1')" style="font-size: larger;" class="menubtn text-edit"
+                            target="_self">
+                            # H1
+                        </a>
+                    </li>
+                    <li>
+                        <a onclick="text_list_helper('## H2')" style="font-size: larger;" class="menubtn text-edit"
+                            target="_self">
+                            ## H2
+                        </a>
+                    </li>
+                    <li>
+                        <a onclick="text_list_helper('### H3')" style="font-size: larger;" class="menubtn text-edit"
+                            target="_self">
+                            ### H3
+                        </a>
+                    </li>
+                    <li>
+                        <p>
+                            <a onclick="text_list_helper('**bold text**')" class="menubtn text-edit" target="_self">
+                                <b>**bold text**</b>
+                            </a>
+                        </p>
+                    </li>
+                    <li>
+                        <p> <a onclick="text_list_helper('*italicized text*')" class="menubtn text-edit" target="_self">
+                                <i>*italicized text*</i>
+                            </a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a onclick="text_list_helper('> blockquote')" class="menubtn text-edit" target="_self">
+                                > blockquote
+                            </a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a onclick="text_list_helper('---')" class="menubtn text-edit" target="_self">
+                                --- (Horizontal Rule)
+                            </a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a onclick="text_list_helper('~~Strikethrough~~')" class="menubtn text-edit" target="_self">
+                                ~~ <s>Strikethrough</s> ~~
+                            </a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a onclick="text_list_helper(`[title](https://www.example.com)`)" class="menubtn text-edit"
+                                target="_self">
+                                Web Link
+                            </a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a onclick="text_list_helper(`![alt text](image.jpg)`)" class="menubtn text-edit"
+                                target="_self">
+                                Image
+                            </a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a onclick="text_list_helper(`
+| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text |
+`)" class="menubtn text-edit" target="_self">
+                                Table
+                            </a>
+                        </p>
+                    </li>
+                    </li>
+                    <li>
+                        <p>
+                            <a onclick="text_list_helper('```[code-language] {some-code}```')" class="menubtn text-edit"
+                                target="_self">
+                                ' Code '
+                            </a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a onclick="text_list_helper(`
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media 
+                            `)" class="menubtn text-edit" target="_self">
+                                Task List
+                            </a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a onclick="text_list_helper(`
+1. First item
+2. Second item
+3. Third item
+                            `)" class="menubtn text-edit" target="_self">
+                                Number List
+                            </a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a onclick="text_list_helper(`
+- First item
+- Second item
+- Third item
+                            `)" class="menubtn text-edit" target="_self">
+                                List
+                            </a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ! GitHub -->
+    <div class="right-menu" tabindex="-1">
+        <a href="https://github.com/Guuzzeji/Noote" tabindex="-1">
+            <img srcset="./img/github-logo.svg" class="github" alt="Github">
+        </a>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- ! Edit Text Area -->
+    <div id="textarea">
+    </div>
+
+    <!-- ! Add Textbox Btn -->
+    <br>
+    <center>
+        <button tabindex="-1" onclick="editline('')" style="width: 30%;">+</button>
+    </center>
+    <br>
+
+    <!-- ! Save and load file -->
+    <div style="display: none;">
+        <input type="file" accept=".note" id="load-file">
+        <a class="download" id="download">download</a>
+    </div>
+
+    <!-- ! JS -->
+    <script src="./js/textedit.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/save.js"></script>
+    <script src="./js/hotkeys.js"></script>
+
+</body>
+
+</html>

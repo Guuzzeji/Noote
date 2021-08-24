@@ -1,0 +1,91 @@
+textarea {
+    border-width: 0px;
+    width: 90vw;
+    resize: none;
+    padding: 5px;
+}
+
+html, body{
+    user-select: none;
+}
+
+a {
+    padding-right: 10px;
+    user-select: none;
+}
+
+.btnbar{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    padding: 10px 16px;
+    background: #161f27;
+    border-bottom-right-radius: 10px;
+    position: fixed;
+    top: 0;
+    left: 0vw;
+}
+
+.right-menu{
+    display: flex;
+    flex: 1;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0vw;
+}
+
+.github{
+    background-color: white; 
+    border-radius: 35px; 
+    padding: 2px; 
+    width: 35px; 
+    height: 35px; 
+    align-content: center;
+}
+
+.menubtn{
+    color: white;
+    padding: 5px;
+}
+
+a.text-edit:focus a.text-edit:active{
+    background-color: red;
+}
+
+
+.overlay {
+    position: absolute;
+    display: flex;
+    flex: 1;
+    padding: 0px 26px;
+    background: #161f27;
+    display: none; /* Hidden by default */
+    cursor: pointer; /* Add a pointer on hover */
+    border-bottom-right-radius: 10px;
+    left: 0;
+  }
+
+.outerdiv {
+    border-style: solid;
+    border-width: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.ul-text-list{
+    list-style: none;
+    padding: 0px;
+}
+
+.selected{
+   color: red;
+}
+
+.text-list{
+    max-height: 80vh;
+    overflow: auto;
+    padding-top: 0px;
+    background: #161f27;
+}
