@@ -10,7 +10,7 @@
 
 <p>Download / Demo: <a href="https://guuzzeji.github.io/Noote">https://guuzzeji.github.io/Noote</a></p>
 
-> <b>Note:</b> This app only works on desktop (MacOS & Windows Computers)
+> <b>Note:</b> This App Only Works On Desktop!
 
 <p>Noote is a free and hackable notepad app made using PWA technology. Along with it gives a clean user experience and allows the user to quickly change how the app works. It uses Markdown to allow users to have a rich text experience.</p>
 
