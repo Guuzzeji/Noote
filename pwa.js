@@ -3,30 +3,30 @@
 let cache_name = 'marknote';
 
 let files = [
-    '/',
-    '/index.html',
+    './',
+    './index.html',
 
     //* CSS Files
-    '/css/main.css',
+    './css/main.css',
 
     //* Img Files
-    '/img/github-logo.svg',
-    '/img/notes.png',
+    './img/github-logo.svg',
+    './img/notes.png',
 
     //* Main Js Files
-    '/js/hotkeys.js',
-    '/js/menu.js',
-    '/js/save.js',
-    '/js/textedit.js',
-    '/js/worker.js',
+    './js/hotkeys.js',
+    './js/menu.js',
+    './js/save.js',
+    './js/textedit.js',
+    './js/worker.js',
 
     //* Library files
-    '/lib/jquery-3.6.0.min.js',
-    '/lib/marked.min.js',
-    '/lib/mousetrap.js',
-    '/lib/purify.js',
-    '/lib/Sortable.js',
-    '/lib/water.css',
+    './lib/jquery-3.6.0.min.js',
+    './lib/marked.min.js',
+    './lib/mousetrap.js',
+    './lib/purify.js',
+    './lib/Sortable.js',
+    './lib/water.css',
 
 ];
 
