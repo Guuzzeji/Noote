@@ -5,7 +5,7 @@
     "background_color": "#161f27",
     "display": "standalone",
     "scope": "/Noote",
-    "start_url": "/index.html",
+    "start_url": "/Noote/",
     "description": "Open Source Markdown Note App (PWA)",
     "icons": [
         {
