@@ -55,7 +55,7 @@ a.text-edit:focus a.text-edit:active{
 
 
 .overlay {
-    position: absolute;
+    position: fixed;
     display: flex;
     flex: 1;
     padding: 0px 26px;
