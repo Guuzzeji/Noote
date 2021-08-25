@@ -8,15 +8,20 @@ window.onbeforeunload = function () {
 //! Show or hide overly list
 function click_text_overlay() {
 
-    if (overlay_text == false) {
-        $('#text-list').fadeIn(250);
-        document.body.style.overflow = 'hidden';
-        overlay_text = true;
+    //* Check to make sure that the user has click on a text box for editing
+    if (user_curr_input != null) {
+        if (overlay_text == false) {
+            $('#text-list').fadeIn(250);
+            document.body.style.overflow = 'hidden';
+            user_curr_input.blur(); //* Make it so the text box can NOT be edited
+            overlay_text = true;
 
-    } else if (overlay_text == true) {
-        $('#text-list').fadeOut(250);
-        document.body.style.overflow = 'auto';
-        overlay_text = false;
+        } else if (overlay_text == true) {
+            $('#text-list').fadeOut(250);
+            document.body.style.overflow = 'auto';
+            user_curr_input.focus(); //* Make it so the text box can be edited
+            overlay_text = false;
+        }
     }
 }
 
