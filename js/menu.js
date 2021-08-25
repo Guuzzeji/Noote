@@ -47,7 +47,7 @@ function loadbtn() {
 }
 
 function addtextBtn(elem) {
-    console.log(elem);
+    //console.log(elem);
     editline('');
     elem.blur();
 }
