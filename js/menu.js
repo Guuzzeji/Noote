@@ -45,9 +45,16 @@ function savebtn() {
 function loadbtn() {
     document.getElementById('load-file').click();
 }
+
+function addtextBtn(elem) {
+    console.log(elem);
+    editline('');
+    elem.blur();
+}
+
 //! ==============
 
-//! Arrow Keys Func
+//! Arrow Keys Func for Text Helper (Edit Btn)
 let items_helper = $(".text-edit");
 let index = -1;
 document.addEventListener('keydown', function (event) {
