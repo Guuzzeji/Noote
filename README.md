@@ -42,12 +42,12 @@
 
 ## Libraries Use To Create Noote
 
-- <a href="https://watercss.kognise.dev/">Water.Css</a>
-- <a href="https://github.com/SortableJS/Sortable">Sortable JS</a>
-- <a href="https://github.com/cure53/DOMPurify">DOMPurify JS</a>
-- <a href="https://craig.is/killing/mice">Mousetrap JS</a>
-- <a href="https://github.com/markedjs/marked">Marked JS</a>
-- <a href="https://jquery.com/">Jquery 3.6.0</a>
+- <a href="https://watercss.kognise.dev/">Water.Css</a> for UI
+- <a href="https://github.com/SortableJS/Sortable">Sortable JS</a> for moving html elements
+- <a href="https://github.com/cure53/DOMPurify">DOMPurify JS</a> for cleaning up markdown html and for security
+- <a href="https://craig.is/killing/mice">Mousetrap JS</a> for hot keys
+- <a href="https://github.com/markedjs/marked">Marked JS</a> for converting markdown into html
+- <a href="https://jquery.com/">Jquery 3.6.0</a> for UI
 
 <br>
 
