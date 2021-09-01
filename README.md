@@ -8,11 +8,31 @@
 
 <p><b>TL;DR:</b> An open source markdown notes app using PWA technology</p>
 
+<p>Noote is a free and hackable notepad app made using PWA technology. Along with it gives a clean user experience and allows the user to quickly change how the app works. It uses Markdown to allow users to have a rich text experience.</p>
+
+<br>
+
+## Download 
+
 <p>Download / Demo: <a href="https://guuzzeji.github.io/Noote">https://guuzzeji.github.io/Noote</a></p>
 
 > <b>Note:</b> This App Only Works On Desktop!
 
-<p>Noote is a free and hackable notepad app made using PWA technology. Along with it gives a clean user experience and allows the user to quickly change how the app works. It uses Markdown to allow users to have a rich text experience.</p>
+<br>
+
+## App Hot Keys
+
+- Text Helper (the edit button): `ctrl+space`
+- Read (close all open edit text boxes): `shift+tab`
+- Save: `ctrl+s`
+- New Box: `shift+space`
+- `Arrow Keys` to move up and down Text Helper list
+- `Right Arrow Key` to select and place highlighted item from Text Helper list 
+- `Tab` to close current edit text box
+
+<br>
+
+## Adding Your Own Features
 
 <p>To start modding Noote, either fork it here on Github or download the source code. </p>
 
@@ -28,18 +48,6 @@
 - <a href="https://craig.is/killing/mice">Mousetrap JS</a>
 - <a href="https://github.com/markedjs/marked">Marked JS</a>
 - <a href="https://jquery.com/">Jquery 3.6.0</a>
-
-<br>
-
-## App Hot Keys
-
-- Text Helper (the edit button): `ctrl+space`
-- Read (close all open edit text boxes): `shift+tab`
-- Save: `ctrl+s`
-- New Box: `shift+space`
-- `Arrow Keys` to move up and down Text Helper list
-- `Right Arrow Key` to select and place highlighted item from Text Helper list 
-- `Tab` to close current edit text box
 
 <br>
 
