@@ -12,7 +12,8 @@
 
 <p>The main goal of Noote is to create a clean notes taking app that doesn't suck and is hackable for everyone.</p>
 
-<br>
+
+![2021-09-02 12-28-18](https://user-images.githubusercontent.com/46883697/131910474-15a5b503-1ec6-4cce-9d65-5f9f4bdbabc3.gif)
 
 
 ## Features 
