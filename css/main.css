@@ -58,7 +58,7 @@ a.text-edit:focus a.text-edit:active{
     position: fixed;
     display: flex;
     flex: 1;
-    padding: 0px 26px;
+    padding: 0px 23.5px;
     background: #161f27;
     display: none; /* Hidden by default */
     cursor: pointer; /* Add a pointer on hover */
