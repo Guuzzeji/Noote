@@ -152,6 +152,10 @@ function editline(val) {
     div.append(text);
 
     textarea.append(div);
+
+    //* Will Open Text box and put user in textarea of textbox 
+    // div.click()
+    // text.focus()
 }
 
 //* Create textbox on start
