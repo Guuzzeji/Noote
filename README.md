@@ -16,7 +16,7 @@
 ![2021-09-02 12-28-18](https://user-images.githubusercontent.com/46883697/131910474-15a5b503-1ec6-4cce-9d65-5f9f4bdbabc3.gif)
 
 
-## Features 
+## (◠﹏◠)  Features 
 
 - Hot Keys
 - Moving around Html elements
@@ -29,7 +29,7 @@
 <br>
 
 
-## Download 
+## ヾ(-_- )ゞ  Download 
 
 > <b>Note:</b> This App Only Works On Desktop!
 <p>Download / Demo at <a href="https://guuzzeji.github.io/Noote">https://guuzzeji.github.io/Noote</a></p>
@@ -37,7 +37,7 @@
 <br>
 
 
-## Hot Keys
+## ʕᵔᴥᵔʔ  Hot Keys
 
 - Text Helper (the edit button): `ctrl+space`
 - Read (close all open edit text boxes): `shift+tab`
@@ -50,7 +50,7 @@
 <br>
 
 
-## Adding Your Own Features / Modifying
+## (ᵔᴥᵔ)  Adding Your Own Features / Modifying
 
 <p>To start modding Noote, either fork it here on Github or download the source code. </p>
 
