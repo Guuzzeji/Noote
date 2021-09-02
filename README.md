@@ -10,17 +10,33 @@
 
 <p>Noote is a free and hackable notepad app made using PWA technology. Along with it gives a clean user experience and allows the user to quickly change how the app works. It uses Markdown to allow users to have a rich text experience.</p>
 
+<p>The main goal of Noote is to create a clean notes taking app that doesn't suck and is hackable for everyone.</p>
+
 <br>
+
+
+## Features 
+
+- Hot Keys
+- Moving around Html elements
+- Markdown text helper
+- Using Markdown to create rich text
+- Clean and simple UI
+- PWA technology
+- Hackable / Able to Modify 
+
+<br>
+
 
 ## Download 
 
-<p>Download / Demo: <a href="https://guuzzeji.github.io/Noote">https://guuzzeji.github.io/Noote</a></p>
-
 > <b>Note:</b> This App Only Works On Desktop!
+<p>Download / Demo at <a href="https://guuzzeji.github.io/Noote">https://guuzzeji.github.io/Noote</a></p>
 
 <br>
 
-## App Hot Keys
+
+## Hot Keys
 
 - Text Helper (the edit button): `ctrl+space`
 - Read (close all open edit text boxes): `shift+tab`
@@ -32,13 +48,15 @@
 
 <br>
 
-## Adding Your Own Features
+
+## Adding Your Own Features / Modifying
 
 <p>To start modding Noote, either fork it here on Github or download the source code. </p>
 
 > <b>Note:</b> Forking it on Github allows you to host the app as a Github webpage for free. 
 
 <br>
+
 
 ## Libraries Use To Create Noote
 
@@ -51,13 +69,15 @@
 
 <br>
 
+
 ## Icon Credit
 
- - <div>Notepad icon made by <a href="https://icon54.com/" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+<div>Notepad icon made by <a href="https://icon54.com/" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
   
- - <div>Github icon made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+<div>Github icon made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
 <br>
+
 
 ## Support
 
